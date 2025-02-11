@@ -20,14 +20,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.image-gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  img {
-    width: 200px;
-    height: 200px;
+.app {
+  text-align: center;
+  h1 {
+    padding: 5px;
+    font-size: 1.5em;
   }
+}
+
+.image-gallery {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+}
+
+.image-container {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
 }
